@@ -95,12 +95,12 @@ export class MemFS implements FileSystemProvider, FileSearchProvider, TextSearch
 		this.createDirectory(Uri.parse(`memfs:/sample-folder/`));
 
 		// most common files types
-		this.writeFile(Uri.parse(`memfs:/sample-folder/large.ts`), textEncoder.encode(largeTSFile), { create: true, overwrite: true });
+		//this.writeFile(Uri.parse(`memfs:/sample-folder/large.ts`), textEncoder.encode(largeTSFile), { create: true, overwrite: true });
 		this.writeFile(Uri.parse(`memfs:/sample-folder/file.txt`), textEncoder.encode('foo'), { create: true, overwrite: true });
 		this.writeFile(Uri.parse(`memfs:/sample-folder/file.html`), textEncoder.encode('<html><body><h1 class="hd">Hello</h1></body></html>'), { create: true, overwrite: true });
 		this.writeFile(Uri.parse(`memfs:/sample-folder/file.js`), textEncoder.encode('console.log("JavaScript")'), { create: true, overwrite: true });
 		this.writeFile(Uri.parse(`memfs:/sample-folder/file.json`), textEncoder.encode('{ "json": true }'), { create: true, overwrite: true });
-		this.writeFile(Uri.parse(`memfs:/sample-folder/file.ts`), textEncoder.encode('console.log("TypeScript")'), { create: true, overwrite: true });
+		this.writeFile(Uri.parse(`memfs:/sample-folder/file.ts`), textEncoder.encode('cons.bar.for'), { create: true, overwrite: true });
 		this.writeFile(Uri.parse(`memfs:/sample-folder/file.css`), textEncoder.encode('* { color: green; }'), { create: true, overwrite: true });
 		this.writeFile(Uri.parse(`memfs:/sample-folder/file.md`), textEncoder.encode(debuggableFile), { create: true, overwrite: true });
 		this.writeFile(Uri.parse(`memfs:/sample-folder/file.xml`), textEncoder.encode('<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>'), { create: true, overwrite: true });

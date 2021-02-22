@@ -38,7 +38,7 @@ export function activate(context: vscode.ExtensionContext) {
 			enableProblems(context);
 			enableTasks();
 
-			vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(`memfs:/sample-folder/large.ts`));
+			vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(`memfs:/sample-folder/file.ts`));
 		}
 
 		// GH/CS
